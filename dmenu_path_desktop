@@ -1,7 +1,5 @@
 #!/bin/bash
-entries=$(ls ~/.local/share/applications /usr/share/applications/)
-for entry in $entries; do
-  if [[ $entry == *.desktop ]]; then
-    echo "${entry%.*}"
-  fi
-done;
+
+entries=$(find ~/.local/share/applications /usr/share/applications -type f,l -name "*.desktop" -exec basename {} .desktop \;)
+
+echo "$entries"
