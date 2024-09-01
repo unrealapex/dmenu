@@ -6,6 +6,7 @@ dmenu is an efficient dynamic menu for X.
 Patches
 ------------
 - case-insensitive
+- desktoponly
 - fuzzymatch
 
 
