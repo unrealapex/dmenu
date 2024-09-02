@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 entries=$(find ~/.local/share/applications /usr/share/applications -type f,l -name "*.desktop" -exec basename {} .desktop \;)
 
