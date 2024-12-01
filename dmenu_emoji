@@ -49,5 +49,3 @@ if [ ! "$emoji" = "" ]; then
   echo "$emoji" | xclip -selection clipboard
     notify-send "emoji: $emoji copied"
 fi
-
-error foo
