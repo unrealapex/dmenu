@@ -47,8 +47,7 @@ emoji=$(jq -r ' .[] | "\(.characters) \(.en_tts_description)"' "$emoji_file" \
 
 if [ ! "$emoji" = "" ]; then
   echo "$emoji" | xclip -selection clipboard
-    # FIXME: work around herbe's lack of emoji support
-    herbe "emoji: copied"
+    notify-send "emoji: $emoji copied"
 fi
 
 error foo
