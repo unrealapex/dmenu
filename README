@@ -1,10 +1,10 @@
 aaron's build of dmenu
-====================
+======================
 dmenu is an efficient dynamic menu for X.
 
 
 Patches
-------------
+-------
 - case-insensitive
 - desktoponly
 - fuzzymatch
@@ -29,6 +29,3 @@ Afterwards enter the following command to build and install dmenu
 Running dmenu
 -------------
 See the man page for details.
-
-
-.. vim: set filetype=rst
