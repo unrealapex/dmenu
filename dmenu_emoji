@@ -9,7 +9,7 @@ else
 fi
 
 error() {
-  printf "%b\n" "${red}$1${fg_reset}"  2>&1
+  printf "%b\n" "${red}dmenu_emoji: $1${fg_reset}"  2>&1
 }
 
 if ! command -v xclip; then
